@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Register</title>
     <meta charset="utf-8"> <!-- for responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- for responsive -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,81 +11,80 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">        
     <style>
-        *
+        h1,label
         {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
+            color: red;
         }
-        .container
+        h1
         {
-            width: 100%;
-            margin: 0 auto;
-            height: 800px;
-            background-color: white;
-            border: 15px solid rgb(0, 208, 255);
-            /* overflow: auto; */
-            background-image: linear-gradient(rgb(138, 110, 110),rgb(126, 126, 210));
-        }
-        .parent
-        {
-            margin: 50px;
-            box-shadow: 0 10px 20px black;
-            height: 700px;
-            /* position: absolute; */
-            border-radius: 7px;
-            display: flex;
-        }
-        .child1
-        {
-            background-color: rgb(135, 163, 222);
-            color: white;
-            /* padding: 180px; */
-            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-            padding-top:  250px;
-            padding-left: 97px;
-            padding-right: 130px;
             text-align: center;
-        }
-        .child2
-        {
-            background-color: whitesmoke;
-            color: rgb(56, 74, 115);
-            /* padding: 250px; */
-            padding-top:  100px;
-            padding-left: 200px;
-            padding-right: 200px;
-        }
-        button
-        {
-            color: white;
-            background-color: rgb(43, 211, 211);
-            height: 40px;
-            width: 150px;
-            text-align: center;
-            border-radius: 20px;
         }
         input
         {
-            width: 500px;
-            height: 40px;
-            background-color: rgb(248, 236, 236);
-            border: 0px;
+            border-color: red;
+            margin-left: 40px;
         }
-        .wb{
-            text-align: center; 
-            font-size: 40px;
+        label
+        {
+            padding: 40px;
+            font-size: 20px;
+        }        
+        body
+        {
+            background-color: aliceblue;
+            border: 10px solid lightseagreen;
         }
-        .ca{
-            text-align: center; 
-            font-size: 60px;
+        .a
+        {
+            height: 30px;
+            width: 800px;   
         }
-    </style>
+        .text
+        {
+            height: 200px;
+            width: 800px;
+            margin-left: 125px;
+            border-color: red;
+        }
+        .submit
+        {
+            height: 30px;
+            width: 200px;
+            margin-left: 50px;
+            background-color:orange;
+        }
+        .select
+        {
+            height: 34px;
+            width: 50px;
+            margin-left: 70px;
+            border-color: green;
+        } 
+        .container
+        {
+            color: brown;
+            border: 2px solid red;
+            background-color: paleturquoise;
+        }
+        /* .address
+        {
+            line-height: 500px; 
+            padding-left: 100px;
+             vertical-align: middle;
+        } */
+        .photo
+        {
+            border: 2px solid red;
+            color: red;
+            height: 30px;
+            width: 790px;   
+        }
+</style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
@@ -101,21 +100,85 @@
 </nav>                  <!-- Menu & Banner Close -->
 
     <div class="container">
-        <div class="parent">
-            <div class="child1">
-                <h1 class="wb">Welcome Back!</h1><br><br>
-                <p>To keep connected with us please <br>login with your personal info</p><br><br>
-                <button><a href="Login.html">SIGN IN</a></button>
-            </div>
-            <div class="child2">
-                <h1 class="ca">Create Account</h1><br><br>
-                <p style="text-align: center">Or use your email for registration</p><br><br>
-                <input type="text" placeholder="Name"><br><br>
-                <input type="text" placeholder="Email"><br><br>
-                <input type="text" placeholder="Password"><br><br>
-                <button style="margin-left: 150px;">SIGN UP</button>
-            </div>
-        </div>
-    </div>    
+        <div >
+            <h1>
+                STUDENT REGISTRATION FORM
+            </h1>
+        </div><br>
+        <div>
+            <label >First Name</label>
+            <input type="text" placeholder="Enter First Name" class="a" style="margin-left: 100px;">
+        </div><br>
+        <div>
+            <label>Last Name</label>
+            <input type="text" placeholder="Enter Last Name" class="a" style="margin-left: 103px;">
+        </div><br>
+        <div>
+            <label>Gender</label>
+            <input type="radio" style="margin-left: 135px;">Male
+            <input type="radio" style="margin-left: 55px;">Female
+        </div><br>
+        <div>
+            <label>Age</label>
+            <input type="text" placeholder="Enter your age" class="a" style="margin-left: 157px;">
+        </div><br>
+        <div>
+            <label>Date of Birth</label>
+            <input type="date" placeholder="" class="a" style="margin-left: 85px;">
+        </div><br>
+        <div>
+            <label for="">Email Address</label>
+            <input type="text" placeholder="Enter your email" class="a" style="margin-left: 73px;">
+        </div><br>
+        <div>
+            <label>Password</label>
+            <input type="text" placeholder="Enter your password min 8 characters" class="a" style="margin-left: 114px;">
+        </div><br>
+        <div>
+            <label>Confirm Password</label>
+            <input type="text" placeholder="Confirm password" class="a">
+        </div><br>
+        <div>
+            <label>Phone Number</label>
+            <select class="select">
+                <option>+91</option>
+            </select>
+            <input type="text" placeholder="Enter your phone number" style="height: 30px; width: 735px; margin-left: 10px;">
+        </div><br>
+        <div>
+            <label class="address">Address</label>            
+            <textarea name="" id="" cols="30" rows="5" placeholder="Enter your address" class="text"></textarea>
+        </div><br>
+        <div>
+            <label for="">State</label>
+            <select name="" id="" class="a" style="margin-left: 150px; border-color: red;">
+                <option value="">--Select your state--</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="">Pin Code</label>
+            <input type="text" placeholder="Enter your pin code" class="a"  style="margin-left: 117px;">
+        </div><br>
+        <div>
+            <label for="">Hobbies</label>
+            <input type="checkbox" style="margin-left: 125px;"><b style="color: red;">Music</b>
+            <input type="checkbox"><b style="color: red;">Movies</b>
+            <input type="checkbox"><b style="color: red;">Sports</b>
+            <input type="checkbox"><b style="color: red;">Travel</b>
+        </div><br>
+        <div>
+
+            <label for="">Upload Photo</label>
+            <input class="photo" type="file" style="margin-left: 295px;">
+        </div><br>
+        <div style="font-size: 18px;">
+            <input type="checkbox"> I hereby declare that the above information provided is true and correct.
+        </div><br>
+        <div style="margin-left: 200px;">
+            <input type="submit" value="Register" class="submit">
+            <input type="submit" value="Reset" class="submit">
+        </div><br>
+    </div>
+
 </body>
 </html>
